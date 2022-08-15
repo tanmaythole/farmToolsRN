@@ -15,9 +15,7 @@ const Navigation = () => {
             activeTintColor: colors.primary,
             tabBarShowLabel: false,
             tabBarStyle: {
-                height: 80,
-                paddingTop: 12,
-                paddingBottom: 10,
+                height: 70,
                 paddingLeft: 10,
                 paddingRight: 10,
                 elevation: 20,
@@ -26,7 +24,7 @@ const Navigation = () => {
         }}
     >
         <Tab.Screen 
-            name='Home'
+            name='HomeStack'
             component={HomeStack}
             options={{
                 headerShown: false,

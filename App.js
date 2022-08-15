@@ -8,8 +8,8 @@ const App = () => {
   return (
     <NavigationContainer>
       <StatusBar barStyle="dark-content" backgroundColor="#fff" />
-      {/* <AuthStack /> */}
-      <Navigation />
+      <AuthStack />
+      {/* <Navigation /> */}
     </NavigationContainer>
   )
 }

@@ -4,7 +4,9 @@ import colors from "../constants/colors/colors";
 const globalStyles = StyleSheet.create({
     container: {
         // flex: 1,
-        backgroundColor: '#ffffff'
+        // backgroundColor: '#ffffff',
+        minHeight: '100%',
+        paddingHorizontal: 16
     },
     heading: {
         color: colors.primaryBlack,
@@ -13,7 +15,8 @@ const globalStyles = StyleSheet.create({
     },
     tagline: {
         color: colors.secondaryBlack,
-        fontSize: 14
+        fontSize: 14,
+        paddingTop: 8
     }
 });
 

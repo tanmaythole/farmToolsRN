@@ -9,15 +9,15 @@ const AuthStack = () => {
     return (
         <Stack.Navigator>
             <Stack.Screen 
-                name='Login'
-                component={LoginScreen}
+                name='Signup'
+                component={SignupScreen}
                 options={{
                     headerShown: false
                 }}
             />
             <Stack.Screen 
-                name='Signup'
-                component={SignupScreen}
+                name='Login'
+                component={LoginScreen}
                 options={{
                     headerShown: false
                 }}

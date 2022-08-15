@@ -2,26 +2,24 @@ import { StyleSheet, View } from 'react-native'
 import React from 'react'
 import LocationBox from '../components/LocationBox';
 import globalStyles from '../styles/GlobalStyles';
-import Input from '../components/Input';
+import Input from '../components/forms/Input';
 import LinearGradient from 'react-native-linear-gradient';
 
 const HomeScreen = () => {
     return (
-        <View style={globalStyles.container}>
-            <LinearGradient colors={['#fff', '#d0ffc4']}>
-                <View style={styles.container}>
-                    <LocationBox />
-                    <View style={styles.searchBox}>
-                        <Input 
-                            leftIcon="search"
-                            placeholder="Search..."
-                            keyboardType="search"
-                            returnKeyType='search'
-                        />
-                    </View>
+        <LinearGradient colors={['#fff', '#d0ffc4']}>
+            <View style={globalStyles.container}>
+                <LocationBox />
+                <View style={styles.searchBox}>
+                    <Input 
+                        leftIcon="search"
+                        placeholder="Search..."
+                        keyboardType="search"
+                        returnKeyType='search'
+                    />
                 </View>
-            </LinearGradient>
-        </View>
+            </View>
+        </LinearGradient>
     )
 }
 
